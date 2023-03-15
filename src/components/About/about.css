@@ -1,0 +1,114 @@
+:root {
+  --primaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  /* --box-shadow: 0 2px 8px 2px 
+ rgba(178, 178, 178, 0.334);  */
+}
+
+.title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.mainContent {
+  gap: 1rem;
+}
+
+.singleItem {
+  text-align: center;
+}
+
+.imgs {
+  background: rgba(247, 144, 54, 0.265);
+  padding: 1rem;
+  width: 50%;
+  border-radius: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  color: var(--blackColor);
+  padding: .5rem;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 13px;
+  padding-bottom: 5rem;
+  color: var(--textColor);
+}
+
+.videoCard {
+  margin-top: 2rem;
+  background: url(../asserts/keke2.jpg);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardText>:first-child {
+  color: var(--whiteColor);
+  font-weight: 600;
+  padding: 1rem;
+
+}
+
+small {
+  color: var(--whiteColor);
+  opacity: .7;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.cardVideo {
+  border: 2px solid var(--whiteColor);
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width:720px) {
+  .videoCard {
+    gap: 4rem;
+    padding: 4rem 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  small {
+    opacity: .7;
+    font-size: 15px;
+  }
+
+  .ct {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+  .mainContent {
+    padding: 2.5rem;
+  }
+}
